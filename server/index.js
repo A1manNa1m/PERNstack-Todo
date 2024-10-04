@@ -37,7 +37,7 @@ app.get("/todos", async(req,res)=>{
         const allTodo = await pool.query("SELECT * FROM todo")
 
         res.status(200).json({
-            message: "All Todo list",
+            message: "All Todo lists",
             success: true,
             error: false,
             data: allTodo.rows
